@@ -44,9 +44,11 @@ export default function Home() {
 
           {/* CTA Buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center mt-12">
-            <Button size="lg" className="text-lg px-8">
-              Start Learning
-            </Button>
+            <a href="/learn">
+              <Button size="lg" className="text-lg px-8">
+                Start Learning
+              </Button>
+            </a>
             <Button variant="outline" size="lg" className="text-lg px-8">
               View Curriculum
             </Button>
@@ -54,29 +56,36 @@ export default function Home() {
 
           {/* Status */}
           <div className="mt-16 p-6 bg-gray-50 rounded-lg">
-            <h3 className="text-lg font-semibold mb-3 text-gray-800">🚀 Project Status: Foundation Complete!</h3>
+            <h3 className="text-lg font-semibold mb-3 text-gray-800">🎉 Learning Platform Ready!</h3>
             <div className="grid md:grid-cols-2 gap-4 text-sm">
               <div>
-                <h4 className="font-medium text-gray-700 mb-2">✅ Completed</h4>
+                <h4 className="font-medium text-gray-700 mb-2">✅ Completed Features</h4>
                 <ul className="space-y-1 text-gray-600">
-                  <li>• Next.js 15 + TypeScript setup</li>
-                  <li>• TailwindCSS v4 with custom theme</li>
-                  <li>• Prisma ORM + MongoDB integration</li>
-                  <li>• Database schema & seeding</li>
-                  <li>• Component library foundation</li>
-                  <li>• Environment configuration</li>
+                  <li>• Complete learning interface</li>
+                  <li>• Module & lesson navigation</li>
+                  <li>• Progress tracking (localStorage)</li>
+                  <li>• Markdown content rendering</li>
+                  <li>• MongoDB Atlas integration</li>
+                  <li>• Responsive design</li>
+                  <li>• 3 MongoDB fundamentals lessons</li>
                 </ul>
               </div>
               <div>
-                <h4 className="font-medium text-gray-700 mb-2">🎯 Next Steps</h4>
+                <h4 className="font-medium text-gray-700 mb-2">🎯 Ready to Add</h4>
                 <ul className="space-y-1 text-gray-600">
-                  <li>• User authentication system</li>
-                  <li>• Learning module interface</li>
                   <li>• Interactive code playground</li>
-                  <li>• Progress tracking</li>
-                  <li>• Advanced features</li>
+                  <li>• More learning modules</li>
+                  <li>• Challenge exercises</li>
+                  <li>• Schema visualization</li>
+                  <li>• Advanced MongoDB topics</li>
+                  <li>• Community features</li>
                 </ul>
               </div>
+            </div>
+            <div className="mt-4 p-3 bg-primary/10 rounded-lg text-center">
+              <p className="text-primary font-medium">
+                🚀 Click "Start Learning" above to begin your MongoDB journey!
+              </p>
             </div>
           </div>
         </main>
